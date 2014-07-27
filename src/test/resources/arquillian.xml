@@ -20,7 +20,14 @@
             <property name="adminUserName">weblogic</property>
             <property name="adminPassword">admin123</property>
             <property name="target">AdminServer</property>
+        </configuration>
+    </container>
 
+    <container qualifier="websphere-managed">
+        <configuration>
+            <property name="wlpHome">${user.home}/opt/wlp-8.5.5.2</property>
+            <property name="serverName">defaultServer</property>
+            <property name="httpPort">9080</property>
         </configuration>
     </container>
 </arquillian>
